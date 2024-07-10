@@ -7,7 +7,7 @@ export default function NavBar() {
         <>
         <header className="header-container">
             <div className="img-container flex">
-                <div className="logo"><img src="./src/assets/logo.svg" alt="logo"/></div>
+                <div className="logo"><img src="/landing-page-with-react/assets/logo.svg" alt="logo"/></div>
                 <div className={`nav-open ${isOpen ? 'active':''}`} onClick={()=>{setIsOpen(!isOpen)}}></div>
             </div>
             <nav className='main-navegation flex'>

@@ -187,7 +187,7 @@ a.u-orange-btn:active {
 }
 
 .banner {
-  background-image: url('./src/assets/background-patterns/bg-simplify-section-mobile.svg');
+  background-image: url('/landing-page-with-react/assets/background-patterns/bg-simplify-section-mobile.svg');
   background-repeat: no-repeat;
 }
 
@@ -217,7 +217,7 @@ a.u-orange-btn:active {
     }
 
     .banner {
-      background-image: url('./src/assets/background-patterns/bg-simplify-section-desktop.svg');
+      background-image: url('/landing-page-with-react/assets/background-patterns/bg-simplify-section-desktop.svg');
       background-repeat: no-repeat;
     }
   }

@@ -37,7 +37,7 @@ export default function Footer() {
             </div>
 
             <div className="footer__logo">
-                <img src="./src/assets/logo.svg" alt="logo" className="logo"/>
+                <img src="/landing-page-with-react/assets/logo.svg" alt="logo" className="logo"/>
             </div>
 
             <div className="footer__copyright">
