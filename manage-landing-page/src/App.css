@@ -14,7 +14,7 @@
   }
   
   .links-container.active {
-    transition: 1s;
+    transition: .5s;
     display: flex;
     height:auto;
     width: 80vw;
@@ -31,6 +31,10 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .links-container.active li{
+      animation: comeFromLeft 1s ease-in;
   }
 
   .in-layout {
@@ -162,10 +166,10 @@ a.nav-btn {
   place-self: start;
   background-color: hsla(13, 100%, 70%, .3);
   padding: .4em 0;
+  border-radius: 20px 0 0 20px;
 }
 
-.sec-articles p,
-.sec-article-title {
+.sec-articles p {
   padding-left: .5em;
 }
 
@@ -188,6 +192,15 @@ a.nav-btn {
 
   .main-articles {
     max-width: 80%;
+  }
+
+  .main-articles-first,
+  .main-articles-second {
+    animation: comeFromLeft .9s;
+  }
+
+  .main-articles-second {
+    animation-timing-function: ease-in-out;
   }
 
   .main-articles-first {
@@ -223,6 +236,18 @@ a.nav-btn {
     text-align: left;
     width: 40ch;
   }
+}
+
+@keyframes comeFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }  
 }
 
 /*----- TESTIMONIALS-----*/

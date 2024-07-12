@@ -1,6 +1,7 @@
 :root {
   font-family: "Be Vietnam Pro", sans-serif;
   --btn-box-shadow: 0 .7em .5em  hsla(12, 88%, 59%, .4);
+  --btn-Act-box-shadow: 0 .4em .2em  hsla(12, 88%, 59%, .4);
   --valid-crl: hsl(101, 83%, 54%);
   --invalid-crl: hsl(0, 88%, 59%);
   --title-font-clr: hsl(228, 39%, 23%);
@@ -18,6 +19,7 @@
   justify-items: center;
   min-height: 100vh;
   max-width: 1440px;
+  overflow: hidden;
 }
 
 
@@ -141,6 +143,7 @@ a.u-orange-btn:hover,
 
 a.u-orange-btn:active {
   transform: scale(1);
+  box-shadow: var(--btn-Act-box-shadow);
 }
 
 .u-semi-bold-font {
